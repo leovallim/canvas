@@ -33,6 +33,10 @@ body{
     align-items: center;
     justify-content: center;
     border:1px solid #cccccc;
+    transition: ease-in 0.3s;
+}
+.canvas__control__container button:hover{
+    background-color: #fafafa;
 }
 .canvas__control__container button.active{
     background:#cccccc;
