@@ -1,11 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
 *{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
 }
 body{
     padding:0;
     margin:0;
+    background: #eaeaea;
 }
 
 .canvas{
     border:1px solid #1b1b1b;
+    background-color: #ffffff;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.canvas__control__container{
+    display: grid;
+    gap:0;
+    grid-template-columns: repeat(9,1fr);
+}
+.canvas__control__container button{
+    width:100%;
+    height: 60px;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #cccccc;
+}
+.canvas__control__container button.active{
+    background:#cccccc;
 }

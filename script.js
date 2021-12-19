@@ -109,15 +109,24 @@ document.querySelectorAll('[data-tool]').forEach(button =>{
     })
 });
 document.querySelector('[data-eraser]').addEventListener('click', ()=> activeColor = '#ffffff');
-document.querySelector('[data-eraser-all]').addEventListener('click', ()=>{
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-    clickY = Array();
-    clickX = Array();
-    color = Array();
-    drag = Array();
-});
 document.querySelectorAll('[data-color]').forEach(button => {
     button.addEventListener('click', e => {
         activeColor = e.target.dataset.color;
     })
 })
+document.querySelectorAll(".canvas__control__container button").forEach(button =>{
+    button.addEventListener('click', e =>{
+        document.querySelectorAll('.canvas__control__container button').forEach(btn => {
+            btn.classList.remove('active');
+        })
+        e.target.classList.add('active')
+    })
+});
+document.querySelector('[data-eraser-all]').addEventListener('click', e =>{
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    clickY = Array();
+    clickX = Array();
+    color = Array();
+    drag = Array();
+    e.target.classList.remove('active');
+});
