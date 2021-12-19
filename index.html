@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="canvas__control">
+        <h1 class="title">Estudo de Canvas V2.0</h1>
+        <div class="canvas__control__container">
+            <button data-undo><i class='bx bx-undo' ></i> Desfazer</button>
+            <button data-tool="pencil"><i class='bx bx-pencil' ></i> Pencil</button>
+            <button data-tool="pen"><i class='bx bx-pen' ></i> Pen</button>
+            <button data-eraser><i class='bx bxs-eraser' ></i> Borracha</button>
+            <button data-eraser-all><i class='bx bxs-eraser' ></i> Apagar tudo</button>
+            <button data-color="#2980b9">Azul</button>
+            <button data-color="#e74c3c">Vermelho</button>
+            <button data-color="#f1c40f">Amarelo</button>
+            <button data-color="#2c3e50">Preto</button>
+        </div>
+    </div>
+    <div class="canvas__wrappper" data-canvas>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
